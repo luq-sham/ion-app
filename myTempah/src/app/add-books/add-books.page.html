@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <div class="form-container">
+    <ion-card class="custom-card">
+      <ion-card-header>
+        <ion-card-title class="card-title"><i class="fas fa-book"></i> Book Information</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <form>
+          <ion-item class="custom-item">
+            <ion-label position="floating"><i class="fas fa-book-open"></i> Book Title</ion-label>
+            <ion-input type="text" placeholder="Enter book title"></ion-input>
+          </ion-item>
+
+          <ion-item class="custom-item">
+            <ion-label position="floating"><i class="fas fa-user"></i> Author</ion-label>
+            <ion-input type="text" placeholder="Enter author name"></ion-input>
+          </ion-item>
+
+          <ion-item class="custom-item">
+            <ion-label position="floating"><i class="fas fa-layer-group"></i> Genre</ion-label>
+            <ion-select placeholder="Select genre">
+              <ion-select-option value="fiction">Fiction</ion-select-option>
+              <ion-select-option value="non-fiction">Non-Fiction</ion-select-option>
+              <ion-select-option value="mystery">Mystery</ion-select-option>
+              <ion-select-option value="fantasy">Fantasy</ion-select-option>
+              <ion-select-option value="biography">Biography</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item class="custom-item">
+            <ion-label position="floating"><i class="fas fa-calendar-alt"></i> Published Year</ion-label>
+            <ion-datetime display-format="YYYY" placeholder="Select year"></ion-datetime>
+          </ion-item>
+
+          <ion-item class="custom-item">
+            <ion-label position="floating"><i class="fas fa-barcode"></i> ISBN</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+
+          <ion-button expand="block" type="submit" color="primary" class="submit-button">
+            <i class="fas fa-plus"></i> Add Book
+          </ion-button>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

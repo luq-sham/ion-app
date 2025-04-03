@@ -1,0 +1,7 @@
+{
+  "name": "myTempah",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
