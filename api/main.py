@@ -21,7 +21,9 @@ class Book(BaseModel):
     title: str
     author: str
     published_year: int
-
+    book_id: str
+    genre: str
+    price: float
 
 @app.get("/")
 def root():
@@ -43,9 +45,9 @@ def get_books_details():
 def add_book(book: Book):
     cursor = conn.cursor()
     
-    query = "INSERT INTO books (title, author, published_year) VALUES (%s, %s, %s)"
-    values = (book.title, book.author, book.published_year)
+    query = "INSERT INTO books (book_id, title, author, published_year, genre, price) VALUES (%s, %s, %s, %s, %s, %s)"
+    values = (book.book_id,book.title, book.author, book.published_year, book.genre, book.price)
     cursor.execute(query, values)
     conn.commit()
         
-    return {"status_code": 201, "message": "Book added successfully"}
+    return {"status_code": 200, "message": "Book added successfully"}

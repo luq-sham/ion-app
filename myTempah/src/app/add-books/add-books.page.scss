@@ -1,32 +1,38 @@
-.form-container {
-    padding: 16px;
-  }
+.form-card {
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
 
-  .custom-card {
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 16px;
-  }
+.submit-btn {
+  margin-top: 24px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
 
-  .card-title {
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-align: center;
-    color: #007bff;
-  }
+.submit-btn:hover {
+  transform: scale(1.01);
+}
 
-  .custom-item {
-    border-radius: 8px;
-    margin-bottom: 12px;
-    background: #f9f9f9;
-  }
+.input-icon {
+  margin-right: 10px;
+  margin-left: 5px;
+  color: #666;
+  padding-top: 12px;
+}
 
-  .submit-button {
-    margin-top: 16px;
-    border-radius: 8px;
-    font-size: 1.2rem;
-  }
+ion-input, 
+ion-select {
+  --padding-start: 20px;
+  --padding-end: 10px;
+  margin-top:8px;
+  margin-bottom:15px;
+  --background: #f0f0f0;
+  --border-radius: 12px;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-  i {
-    margin-right: 8px;
-  }
+.custom-label{
+  font-size: 1.0rem;
+  color: #333;
+}
